@@ -1,0 +1,11 @@
+# Secrets — never commit real API keys or connection strings
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.dist/
+
+# Student data / generated identifier files
+*_with_identifiers.csv

@@ -1,0 +1,14 @@
+[project]
+name = "directed-number-misconception-chatbot"
+version = "0.1.0"
+description = "Streamlit chatbot roleplaying a student with a directed-number misconception"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "anthropic>=0.122.0",
+    "pymongo>=4.7",
+    "streamlit>=1.40.2",
+    # Used only by scripts/; deliberately not in requirements.txt, which is the
+    # Streamlit Cloud deployment manifest for the app alone.
+    "pandas>=2.2",
+]
