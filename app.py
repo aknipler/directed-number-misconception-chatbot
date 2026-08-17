@@ -211,7 +211,7 @@ def chat_page(client):
                         messages=st.session_state.chat_history,
                         max_tokens=2048,
                         thinking={"type": "disabled"},
-                        output_config={"effort": "low"},
+                        output_config={"effort": "high"},
                     ) as stream:
                         # write_stream renders each chunk and returns the joined text;
                         # st.write returns None, which would store a null transcript
